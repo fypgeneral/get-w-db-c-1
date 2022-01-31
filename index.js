@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const data = require('./data');
 
 const app = express();
 app.use(bodyParser.json());
@@ -18,9 +17,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/allusers', function (req, res) {
-  res.json(data);
-});
+// Add your code here
+/*****************************************************************************************************************************************************************/
 
 var listener = app.listen(PORT, () =>
   console.log(`Server Running on Port: ${PORT}`)
